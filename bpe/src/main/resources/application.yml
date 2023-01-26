@@ -1,0 +1,20 @@
+server.port: 8082
+
+kafka.bootstrapAddress: kafka:29092
+#kafka.bootstrapAddress: localhost:9092
+
+spring.datasource:
+  url: jdbc:h2:./camunda-h2-default/process-engine;TRACE_LEVEL_FILE=0;DB_CLOSE_ON_EXIT=FALSE
+  username: camunda
+  password: camunda
+  driver-class-name: org.h2.Driver
+
+#camunda:
+#  bpm:
+#    auto-deployment-enabled: true
+#    history-level: full
+#  webapp:
+#    index-redirect-enabled: true
+#  admin-user:
+#    id: demo
+#    password: demo

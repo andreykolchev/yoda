@@ -1,0 +1,38 @@
+##gateway
+docker build --tag=docker_account/gateway:latest .
+docker push docker_account/gateway:latest
+docker run -d --rm -p8081:8081 docker_account/gateway:latest
+
+##bpe
+docker build --tag=docker_account/bpe:latest .
+docker push docker_account/bpe:latest
+docker run -d docker_account/bpe:latest
+
+##worker-userinfo
+docker build --tag=docker_account/worker-userinfo:latest .
+docker push docker_account/worker-userinfo:latest
+docker run -d docker_account/worker-userinfo:latest
+
+##worker-payment
+docker build --tag=docker_account/worker-payment:latest .
+docker push docker_account/worker-payment:latest
+docker run -d docker_account/worker-payment:latest
+
+##deployment
+mkdir mock-api
+create docker-compose.yml
+
+##start
+docker-compose up -d
+
+##stop
+docker-compose down --rmi all
+
+docker-compose logs bpe
+
+
+DB_DRIVER=org.postgresql.Driver
+DB_URL=jdbc:postgresql://db:5432/process-engine
+DB_USERNAME=camunda
+DB_PASSWORD=camunda
+WAIT_FOR=db:5432

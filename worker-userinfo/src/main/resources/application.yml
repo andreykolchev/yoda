@@ -1,0 +1,6 @@
+spring:
+  main:
+    web-application-type: none
+
+kafka.bootstrapAddress: kafka:29092
+#kafka.bootstrapAddress: localhost:9092

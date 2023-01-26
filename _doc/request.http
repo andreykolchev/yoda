@@ -1,0 +1,40 @@
+# curl --location --request GET 'http://localhost:8080/account'
+#--header 'accept: */*'
+#--header 'token: 1'
+#--header 'operation-id: c1df7906-9c87-11eb-a8b3-0242ac130003'
+GET http://localhost:8080/account
+accept: */*
+token: 2
+operation-id: c1df7906-9c87-11eb-a8b3-0242ac130003
+
+###
+GET http://localhost:8080/userInfo
+accept: */*
+token: 2
+operation-id: c1df7906-9c87-11eb-a8b3-0242ac130003
+
+####
+POST http://localhost:8080/withdraw
+accept: */*
+token: 2
+operation-id: c1df7906-9c87-11eb-a8b3-0242ac130003
+Content-Type: application/json
+
+{
+  "account": 9876543216544875,
+  "commissionAccount": 0,
+  "sum": 10000.00
+}
+
+###
+POST http://localhost:8080/charge
+accept: */*
+token: 2
+operation-id: c1df7906-9c87-11eb-a8b3-0242ac130003
+Content-Type: application/json
+
+{
+  "account": 9876543216544875,
+  "commissionAccount": 0,
+  "sum": 10000.00
+}

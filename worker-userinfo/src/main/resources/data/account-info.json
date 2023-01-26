@@ -1,0 +1,55 @@
+{
+  "1": {
+    "accounts": [
+      {
+        "accountNumber": 1325256396357896,
+        "cards": [
+          {
+            "cardNumber": "1325256396357896",
+            "expires": "09/22",
+            "cardType": 1
+          },
+          {
+            "cardNumber": "2563132596357896",
+            "expires": "03/21",
+            "cardType": 2
+          },
+          {
+            "cardNumber": "5789613252563963",
+            "expires": "01/23",
+            "cardType": 1
+          }
+        ]
+      }
+    ]
+  },
+  "2": {
+    "accounts": [
+      {
+        "accountNumber": 9876543216544875,
+        "cards": [
+          {
+            "cardNumber": "9876543216544875",
+            "expires": "11/21",
+            "cardType": 1
+          },
+          {
+            "cardNumber": "6544987654321875",
+            "expires": "10/23",
+            "cardType": 2
+          }
+        ]
+      },
+      {
+        "accountNumber": 7654983216544875,
+        "cards": [
+          {
+            "cardNumber": "7654983216544875",
+            "expires": "10/22",
+            "cardType": 1
+          }
+        ]
+      }
+    ]
+  }
+}
